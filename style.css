@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(20, 19, 19);
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Container, .photo {
+    max-width: 50rem;
+    height: 23rem;
+}
+.Container {
+    box-shadow: 6px 0px 14px 9px  rgb(11, 12, 12);
+    display: flex;
+}
+
+#imgContainer {
+    display: flex;
+
+    max-width: 40rem;
+}
+
+.right, .left {
+    display: flex;
+    justify-content: center;
+
+    background-color: rgb(24, 182, 129);
+
+    z-index: 0;
+
+    width: 10rem;
+    height: 100%;
+
+}
+.left img, .right img {
+    width: 2rem;
+}
+
+.left {
+    box-shadow: -8px 0px 19px 2px rgb(11, 12, 12);
+
+    border-radius: 5px 0 0px 5px;
+}
+.right {
+    border-radius: 0 5px 5px 0;
+}
+
+.left:hover, .right:hover {
+    cursor: pointer;
+}
+
+
+
